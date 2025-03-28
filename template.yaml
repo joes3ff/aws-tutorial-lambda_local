@@ -10,36 +10,7 @@ Resources:
     Properties:
       CodeUri: lambda/ # format is projectPath/
       Handler: lambda.lambdaHandler # format is filename.functionName
-      Runtime: nodejs12.x
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      Runtime: python3.10
 
 
   ApiGatewayFunction:
@@ -47,7 +18,7 @@ Resources:
     Properties:
       CodeUri: apigateway/ # format is projectPath/
       Handler: apigateway.lambdaHandler # format is filename.functionName
-      Runtime: nodejs12.x
+      Runtime: python3.10
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
