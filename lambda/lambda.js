@@ -4,5 +4,6 @@ exports.lambdaHandler = async (event, context) => {
 };
 
 // demo push
+// demo push 2
 
 //sam local invoke -e ./lambda/lambda_event.json LambdaDemoFunction  
